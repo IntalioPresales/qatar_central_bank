@@ -1,0 +1,90 @@
+<html>
+
+<head>
+
+</head>
+
+<style>
+    .wrapper {
+        width: 100%;
+        /* may remove width:100%, as div is always 100% */
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .position-relative {
+        min-height: 400px;
+        width: 100%;
+        clip-path: polygon(0 1%, 100% 0, 100% 75%, 0% 100%);
+    }
+
+    .position-relative-b {
+        min-height: 290px;
+        width: 100%;
+        clip-path: polygon(0 33%, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    img {
+        width: 33%;
+    }
+
+    .wrapper-b {
+        width: 100%;
+        /* may remove width:100%, as div is always 100% */
+        margin: 0 auto;
+        overflow: hidden;
+        width: 100%;
+        margin-top: -89px;
+    }
+
+    .position--2 {
+        min-height: 400px;
+        width: 100%;
+        clip-path: polygon(0 1%, 100% 0, 100% 75%, 0% 100%);
+    }
+
+    .position-relative-b * {
+        /* display: inline-flexbox; */
+        display: -webkit-inline-box;
+    }
+
+    .left {
+        width: 49%;
+        height: 300px;
+        background-color: aqua;
+        /* display: block; */
+    }
+
+    .left {
+        width: 49%;
+        background-color: aqua;
+    }
+
+    .right {
+        width: 49%;
+        height: 300px;
+
+        background-color: rgb(133, 21, 99);
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <div class="position-relative">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/19/ba/ca/8b/new-cocktail-menu.jpg">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/19/ba/ca/8b/new-cocktail-menu.jpg">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/19/ba/ca/8b/new-cocktail-menu.jpg">
+        </div>
+    </div>
+
+    <div class="wrapper-b">
+        <div class="position-relative-b">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
